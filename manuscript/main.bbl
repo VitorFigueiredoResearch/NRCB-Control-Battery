@@ -1,0 +1,160 @@
+\begin{thebibliography}{14}
+\expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\href}[2]{#2}
+\providecommand{\path}[1]{#1}
+\providecommand{\DOIprefix}{doi:}
+\providecommand{\ArXivprefix}{arXiv:}
+\providecommand{\URLprefix}{URL: }
+\providecommand{\Pubmedprefix}{pmid:}
+\providecommand{\doi}[1]{\href{http://dx.doi.org/#1}{\path{#1}}}
+\providecommand{\Pubmed}[1]{\href{pmid:#1}{\path{#1}}}
+\providecommand{\bibinfo}[2]{#2}
+\ifx\xfnm\relax \def\xfnm[#1]{\unskip,\space#1}\fi
+%Type = Article
+\bibitem[{Courteau et~al.(2014)Courteau, Cappellari, de~Jong, Dutton, Emsellem,
+  Hoekstra, Koopmans, Mamon, Maraston, Treu and Widrow}]{Courteau2014}
+\bibinfo{author}{Courteau, S.}, \bibinfo{author}{Cappellari, M.},
+  \bibinfo{author}{de~Jong, R.S.}, \bibinfo{author}{Dutton, A.A.},
+  \bibinfo{author}{Emsellem, E.}, \bibinfo{author}{Hoekstra, H.},
+  \bibinfo{author}{Koopmans, L.V.E.}, \bibinfo{author}{Mamon, G.A.},
+  \bibinfo{author}{Maraston, C.}, \bibinfo{author}{Treu, T.},
+  \bibinfo{author}{Widrow, L.M.}, \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{Galaxy masses}.
+\newblock \bibinfo{journal}{Reviews of Modern Physics} \bibinfo{volume}{86},
+  \bibinfo{pages}{47--119}.
+\newblock \DOIprefix\doi{10.1103/RevModPhys.86.47},
+  \href{http://arxiv.org/abs/1309.3276}{{\tt arXiv:1309.3276}}.
+%Type = Article
+\bibitem[{{de Blok} et~al.(2008){de Blok}, Walter, Brinks, Trachternach, Oh and
+  Kennicutt}]{deBlok2008}
+\bibinfo{author}{{de Blok}, W.J.G.}, \bibinfo{author}{Walter, F.},
+  \bibinfo{author}{Brinks, E.}, \bibinfo{author}{Trachternach, C.},
+  \bibinfo{author}{Oh, S.H.}, \bibinfo{author}{Kennicutt, Robert~C., J.},
+  \bibinfo{year}{2008}.
+\newblock \bibinfo{title}{High-resolution rotation curves and galaxy mass
+  models from {THINGS}}.
+\newblock \bibinfo{journal}{The Astronomical Journal} \bibinfo{volume}{136},
+  \bibinfo{pages}{2648}.
+\newblock \DOIprefix\doi{10.1088/0004-6256/136/6/2648},
+  \href{http://arxiv.org/abs/0810.2100}{{\tt arXiv:0810.2100}}.
+%Type = Book
+\bibitem[{Feigelson and Babu(2012)}]{FeigelsonBabu2012}
+\bibinfo{author}{Feigelson, E.D.}, \bibinfo{author}{Babu, G.J.},
+  \bibinfo{year}{2012}.
+\newblock \bibinfo{title}{Modern Statistical Methods for Astronomy: With {R}
+  Applications}.
+\newblock \bibinfo{publisher}{Cambridge University Press}.
+\newblock \DOIprefix\doi{10.1017/CBO9781139015653}.
+%Type = Article
+\bibitem[{Harris et~al.(2020)Harris, Millman, van~der Walt, Gommers, Virtanen,
+  Cournapeau, Wieser, Taylor, Berg, Smith et~al.}]{Harris2020}
+\bibinfo{author}{Harris, C.R.}, \bibinfo{author}{Millman, K.J.},
+  \bibinfo{author}{van~der Walt, S.J.}, \bibinfo{author}{Gommers, R.},
+  \bibinfo{author}{Virtanen, P.}, \bibinfo{author}{Cournapeau, D.},
+  \bibinfo{author}{Wieser, E.}, \bibinfo{author}{Taylor, J.},
+  \bibinfo{author}{Berg, S.}, \bibinfo{author}{Smith, N.J.}, et~al.,
+  \bibinfo{year}{2020}.
+\newblock \bibinfo{title}{Array programming with {NumPy}}.
+\newblock \bibinfo{journal}{Nature} \bibinfo{volume}{585},
+  \bibinfo{pages}{357--362}.
+\newblock \DOIprefix\doi{10.1038/s41586-020-2649-2},
+  \href{http://arxiv.org/abs/2006.10256}{{\tt arXiv:2006.10256}}.
+%Type = Article
+\bibitem[{Lancaster et~al.(2018)Lancaster, Iatsenko, Pidde, Ticcinelli and
+  Stefanovska}]{Lancaster2018}
+\bibinfo{author}{Lancaster, G.}, \bibinfo{author}{Iatsenko, D.},
+  \bibinfo{author}{Pidde, A.}, \bibinfo{author}{Ticcinelli, V.},
+  \bibinfo{author}{Stefanovska, A.}, \bibinfo{year}{2018}.
+\newblock \bibinfo{title}{Surrogate data for hypothesis testing of physical
+  systems}.
+\newblock \bibinfo{journal}{Physics Reports} \bibinfo{volume}{748},
+  \bibinfo{pages}{1--60}.
+\newblock \DOIprefix\doi{10.1016/j.physrep.2018.06.001}.
+%Type = Article
+\bibitem[{Lelli et~al.(2016)Lelli, McGaugh and Schombert}]{Lelli2016}
+\bibinfo{author}{Lelli, F.}, \bibinfo{author}{McGaugh, S.S.},
+  \bibinfo{author}{Schombert, J.M.}, \bibinfo{year}{2016}.
+\newblock \bibinfo{title}{{SPARC}: Mass models for 175 disk galaxies with
+  {Spitzer} photometry and accurate rotation curves}.
+\newblock \bibinfo{journal}{The Astronomical Journal} \bibinfo{volume}{152},
+  \bibinfo{pages}{157}.
+\newblock \DOIprefix\doi{10.3847/0004-6256/152/6/157}.
+%Type = Article
+\bibitem[{Phipson and Smyth(2010)}]{PhipsonSmyth2010}
+\bibinfo{author}{Phipson, B.}, \bibinfo{author}{Smyth, G.K.},
+  \bibinfo{year}{2010}.
+\newblock \bibinfo{title}{Permutation p-values should never be zero:
+  Calculating exact p-values when permutations are randomly drawn}.
+\newblock \bibinfo{journal}{Statistical Applications in Genetics and Molecular
+  Biology} \bibinfo{volume}{9}.
+\newblock \DOIprefix\doi{10.2202/1544-6115.1585},
+  \href{http://arxiv.org/abs/1603.05766}{{\tt arXiv:1603.05766}}.
+  \bibinfo{note}{article 39}.
+%Type = Article
+\bibitem[{Sandve et~al.(2013)Sandve, Nekrutenko, Taylor and Hovig}]{Sandve2013}
+\bibinfo{author}{Sandve, G.K.}, \bibinfo{author}{Nekrutenko, A.},
+  \bibinfo{author}{Taylor, J.}, \bibinfo{author}{Hovig, E.},
+  \bibinfo{year}{2013}.
+\newblock \bibinfo{title}{Ten simple rules for reproducible computational
+  research}.
+\newblock \bibinfo{journal}{PLOS Computational Biology} \bibinfo{volume}{9},
+  \bibinfo{pages}{e1003285}.
+\newblock \DOIprefix\doi{10.1371/journal.pcbi.1003285}.
+%Type = Article
+\bibitem[{Schreiber and Schmitz(1996)}]{SchreiberSchmitz1996}
+\bibinfo{author}{Schreiber, T.}, \bibinfo{author}{Schmitz, A.},
+  \bibinfo{year}{1996}.
+\newblock \bibinfo{title}{Improved surrogate data for nonlinearity tests}.
+\newblock \bibinfo{journal}{Physical Review Letters} \bibinfo{volume}{77},
+  \bibinfo{pages}{635--638}.
+\newblock \DOIprefix\doi{10.1103/PhysRevLett.77.635}.
+%Type = Article
+\bibitem[{Schreiber and Schmitz(2000)}]{SchreiberSchmitz2000}
+\bibinfo{author}{Schreiber, T.}, \bibinfo{author}{Schmitz, A.},
+  \bibinfo{year}{2000}.
+\newblock \bibinfo{title}{Surrogate time series}.
+\newblock \bibinfo{journal}{Physica D: Nonlinear Phenomena}
+  \bibinfo{volume}{142}, \bibinfo{pages}{346--382}.
+\newblock \DOIprefix\doi{10.1016/S0167-2789(00)00043-9}.
+%Type = Article
+\bibitem[{Sofue and Rubin(2001)}]{SofueRubin2001}
+\bibinfo{author}{Sofue, Y.}, \bibinfo{author}{Rubin, V.}, \bibinfo{year}{2001}.
+\newblock \bibinfo{title}{Rotation curves of spiral galaxies}.
+\newblock \bibinfo{journal}{Annual Review of Astronomy and Astrophysics}
+  \bibinfo{volume}{39}, \bibinfo{pages}{137--174}.
+\newblock \DOIprefix\doi{10.1146/annurev.astro.39.1.137}.
+%Type = Article
+\bibitem[{Theiler et~al.(1992)Theiler, Eubank, Longtin, Galdrikian and
+  Farmer}]{Theiler1992}
+\bibinfo{author}{Theiler, J.}, \bibinfo{author}{Eubank, S.},
+  \bibinfo{author}{Longtin, A.}, \bibinfo{author}{Galdrikian, B.},
+  \bibinfo{author}{Farmer, J.D.}, \bibinfo{year}{1992}.
+\newblock \bibinfo{title}{Testing for nonlinearity in time series: the method
+  of surrogate data}.
+\newblock \bibinfo{journal}{Physica D: Nonlinear Phenomena}
+  \bibinfo{volume}{58}, \bibinfo{pages}{77--94}.
+\newblock \DOIprefix\doi{10.1016/0167-2789(92)90102-S}.
+%Type = Article
+\bibitem[{Wilson et~al.(2014)Wilson, Aruliah, Brown, Chue~Hong, Davis, Guy
+  et~al.}]{Wilson2014}
+\bibinfo{author}{Wilson, G.}, \bibinfo{author}{Aruliah, D.A.},
+  \bibinfo{author}{Brown, C.T.}, \bibinfo{author}{Chue~Hong, N.P.},
+  \bibinfo{author}{Davis, M.}, \bibinfo{author}{Guy, R.T.}, et~al.,
+  \bibinfo{year}{2014}.
+\newblock \bibinfo{title}{Best practices for scientific computing}.
+\newblock \bibinfo{journal}{PLOS Biology} \bibinfo{volume}{12},
+  \bibinfo{pages}{e1001745}.
+\newblock \DOIprefix\doi{10.1371/journal.pbio.1001745}.
+%Type = Article
+\bibitem[{Yu and Hutson(2024)}]{YuHutson2022}
+\bibinfo{author}{Yu, H.}, \bibinfo{author}{Hutson, A.D.}, \bibinfo{year}{2024}.
+\newblock \bibinfo{title}{A robust spearman correlation coefficient permutation
+  test}.
+\newblock \bibinfo{journal}{Communications in Statistics - Theory and Methods}
+  \bibinfo{volume}{53}, \bibinfo{pages}{2141--2153}.
+\newblock \DOIprefix\doi{10.1080/03610926.2022.2121144},
+  \href{http://arxiv.org/abs/2008.01200}{{\tt arXiv:2008.01200}}.
+  \bibinfo{note}{published online 2022}.
+
+\end{thebibliography}

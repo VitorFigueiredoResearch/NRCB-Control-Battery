@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: >-
+  If you use this software or its method, please cite both the manuscript
+  (for the method) and the archived software release (for the
+  implementation). DOI metadata will be added after archival deposit.
+title: Nisa Radial Control Battery
+type: software
+authors:
+  - family-names: Figueiredo
+    given-names: Vitor M. F.
+license: GPL-3.0-only
+preferred-citation:
+  type: article
+  title: >-
+    A Reproducible Control-Validation Workflow for Circular-Shift and
+    Surrogate Tests of Galactic Radial Profiles
+  authors:
+    - family-names: Figueiredo
+      given-names: Vitor M. F.

@@ -1,0 +1,142 @@
+
+\section{Methods}
+\label{sec:methods}
+
+\subsection{Diagnostic definitions}
+\label{sec:diagnostics}
+
+For galaxy $g$, let $i=1,\ldots,n_g$ index its frozen valid radial bins. Let
+$r_{gi}$ denote the radius-conditioning coordinate,
+$y_{gi}=|\log_{10}(v_{\mathrm{rec},gi}/v_{\mathrm{obs},gi})|$ the residual
+magnitude, and $\sigma_{gi}$ the reconstructed total radial covariate.
+
+\subsubsection{Radial-template covariate and partial-rank statistic}
+
+The normalized covariate and radial-template function are
+\begin{equation}
+c_{gi} =
+\frac{\sigma_{gi}}
+{\operatorname{median}\{\sigma_{gj}:\sigma_{gj}>0,\ \sigma_{gj}\ {\rm finite}\}},
+\end{equation}
+and
+\begin{equation}
+t(c)=\operatorname{clip}_{[0,1]}
+\left[
+\exp\left\{-\left(\frac{\log_{10}(\max(c,10^{-12}))}{0.50}\right)^2\right\}
+\right].
+\end{equation}
+A scale fallback of one is used when no finite positive covariate value
+exists, and nonfinite normalized entries are replaced by zero.
+
+Let $\operatorname{rank}(\cdot)$ assign average ranks to ties and
+$X_g=[\mathbf{1},\operatorname{rank}(r_g)]$. For any vector $z_g$, define
+\begin{equation}
+\widehat{\beta}_z=\underset{\beta}{\arg\min}\,
+\|\operatorname{rank}(z_g)-X_g\beta\|_2^2,\qquad
+u_z=\operatorname{rank}(z_g)-X_g\widehat{\beta}_z,
+\end{equation}
+implemented through least-squares fitting. The signed statistic is
+\begin{equation}
+\rho_g=\operatorname{corr}\left(u_{t(c)},u_y\right),
+\end{equation}
+and the production-facing headline summary uses $|\rho_g|$.
+
+\subsubsection{Spectral concentration}
+
+Each valid profile is linearly interpolated onto 64 evenly spaced points in
+$\log_{10}(R/\operatorname{median}_{+}(R))$ and mean-centered. After a
+real-valued Fourier transform and removal of the DC component, define
+\begin{equation}
+p_k=\frac{|F_k|^2}{\sum_j |F_j|^2},
+\qquad
+C=1-\frac{-\sum_k p_k\log p_k}{\log K},
+\end{equation}
+where $K$ is the number of retained non-DC power bins.
+
+\subsection{Control families and empirical summaries}
+\label{sec:controls}
+
+Permutation and surrogate procedures are established tools in general
+statistical and correlation-testing contexts
+\citep{SchreiberSchmitz2000,PhipsonSmyth2010,YuHutson2022}.
+
+\subsubsection{Shuffle/permutation controls}
+
+For each partial-branch galaxy, $M=1000$ deterministic-seed realizations
+permute only the normalized radial covariate. Radius and residual vectors
+remain frozen, and the template function is applied after permutation. This
+general baseline does not imply common practice in rotation-curve analysis.
+
+\subsubsection{Exact circular-shift randomization distributions}
+
+For a galaxy with $n_g$ valid bins, the production-facing
+ordering-preserving control uses every offset in
+\begin{equation}
+\mathcal{S}_g=\{1,2,\ldots,n_g-1\}
+\end{equation}
+exactly once. Offset zero is excluded. For each $s\in\mathcal{S}_g$,
+$c_g^{(s)}=\operatorname{roll}(c_g,s)$ is transformed and evaluated with the
+same radius-conditioned statistic.
+
+Cyclic wrap-around is an operational finite-sample randomization convention,
+not a claim that the innermost and outermost radial bins are physically
+adjacent. Only the normalized radial covariate is rolled; the radius vector,
+residual profile, finite sample size, and frozen validity mask remain fixed.
+Applying every non-identity offset preserves the ordered covariate sequence
+under translation and defines an exact finite randomization space over all
+nontrivial cyclic alignments. The comparison tests sensitivity to radial
+ordering and alignment between the radial-template covariate and residual
+profile, conditional on this operational convention.
+
+\subsubsection{Amplitude-preserving random-phase controls}
+
+For each spectral-valid residual and radial-template profile, $M=1000$
+controls preserve Fourier amplitudes while randomizing the unconstrained
+phases at positive frequencies. The mean-centered DC component is zero; the
+even-length Nyquist coefficient remains real with a randomized sign; and an
+inverse real-valued Fourier transform restores the profile
+\citep{Theiler1992,SchreiberSchmitz2000}. More constrained surrogate families
+can preserve additional data properties \citep{SchreiberSchmitz1996}, but the
+present random-phase tier is intentionally limited to amplitude preservation
+and is interpreted only within that control-family definition.
+
+The random-phase comparison is included as a sensitivity diagnostic for the
+spectral statistic: because spectral concentration is amplitude-based,
+amplitude-preserving phase randomization demonstrates which quantities are
+invariant by construction rather than providing independent physical
+evidence.
+
+\subsubsection{Smooth fixed references}
+
+On a 64-point coordinate $x\in[0,1]$, the fixed profiles are
+\begin{equation}
+\exp(-x),\qquad \max(1-x,0),\qquad \max(1-x,0)^2.
+\end{equation}
+They are fixed references, not stochastic controls, and receive no empirical
+percentile or p-value.
+
+\subsubsection{Empirical summaries}
+
+For finite observed value $z_{\rm obs}$, finite controls
+$\{z_m\}_{m=1}^{M_v}$, and $\epsilon=10^{-12}$, define
+\begin{equation}
+L=\#\{z_m<z_{\rm obs}-\epsilon\},\quad
+E=\#\{|z_m-z_{\rm obs}|\leq\epsilon\},\quad
+G=\#\{z_m>z_{\rm obs}+\epsilon\},
+\end{equation}
+with $L+E+G=M_v$. The bounded mid-rank percentile is
+\begin{equation}
+q=\operatorname{clip}_{[0,1]}\left(\frac{L+E/2}{M_v}\right).
+\end{equation}
+For signed or absolute random-tier statistics,
+\begin{equation}
+p_{\rm MC}=\operatorname{clip}_{[0,1]}
+\left[
+\frac{1+\#\{|z_m|\geq |z_{\rm obs}|-\epsilon\}}{M_v+1}
+\right].
+\end{equation}
+The same formula is used for the exhaustive nontrivial circular-shift set.
+For the nonnegative phase-blind spectral statistic,
+$p_{\rm spectral}=\min\{1,2\min(q,1-q)\}$. Fixed references receive neither
+an empirical percentile nor an empirical p-value.
+

@@ -1,0 +1,54 @@
+% Purpose: motivate control validation for radial-structure diagnostics and state the contribution.
+\section{Introduction}
+\label{sec:introduction}
+
+Radial-structure diagnostics correlate a radially organized covariate with
+the residuals of galaxy rotation-curve fits in order to probe inner-region
+structure. Rotation curves and radial profiles are widely used observational
+diagnostics in galaxy studies, including broad rotation-curve reviews,
+high-resolution nearby-galaxy rotation-curve surveys, and galaxy-mass reviews
+\citep{SofueRubin2001,deBlok2008,Courteau2014}. A practical difficulty is
+that the radius itself, and any smooth radially organized covariate, can
+induce apparent correlations that do not reflect localized structure. Establishing
+whether a measured correlation
+carries information beyond broad radial organization is therefore primarily
+a computational and statistical problem of control design.
+
+Permutation and surrogate procedures are established tools in general
+statistical and correlation-testing contexts, with related resampling and
+non-parametric methods widely discussed in astronomy-statistics practice
+\citep{SchreiberSchmitz2000,Lancaster2018,FeigelsonBabu2012,PhipsonSmyth2010,YuHutson2022}.
+They also have a lineage in surrogate-data testing of an observed statistic
+against randomized alternatives \citep{Theiler1992}. These procedures are
+general-purpose; we
+do not claim that any particular control family is common published
+practice in rotation-curve analysis. Different control families preserve
+different structure, and a correlation that exceeds a label-shuffle
+comparison may still be reproduced by controls that preserve radial
+ordering.
+
+{\setlength{\emergencystretch}{2em}
+In this work we present a reproducible, branch-separated control-validation
+workflow for radial-structure diagnostics in SPARC-like rotation-curve data
+\citep{Lelli2016}. The implemented workflow is referred to here as the Nisa
+Radial Control Battery (NRCB). The workflow evaluates a radius-conditioned
+partial-rank statistic against stochastic shuffle/permutation empirical control
+distributions and against exact circular-shift randomization distributions,
+and evaluates an amplitude-based spectral-concentration statistic against
+amplitude-preserving random-phase controls and fixed smooth references. Our
+contribution is the design of this control battery, its deterministic-seed
+implementation, and an audited descriptive demonstration on two explicitly
+separated galaxy samples. We make no physical interpretation or
+model-validation claim; the demonstration characterizes how the control
+families behave, not the astrophysics of any galaxy.
+\par}
+
+The paper is organized as follows. Section~\ref{sec:data} defines the data
+context and the two sample branches. Section~\ref{sec:methods} defines the
+diagnostic statistics and control families. Section~\ref{sec:demonstration}
+presents the descriptive demonstration. Section~\ref{sec:discussion} states
+limitations, Section~\ref{sec:reproducibility} documents reproducibility,
+and Section~\ref{sec:conclusion} concludes.
+
+
+

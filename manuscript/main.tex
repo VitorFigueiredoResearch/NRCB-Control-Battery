@@ -1,0 +1,86 @@
+% Manuscript source — Astronomy and Computing (Elsevier).
+\documentclass[preprint,12pt]{elsarticle}
+
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage[english]{babel}
+\usepackage[protrusion=true,expansion=false]{microtype}
+
+\setlength{\emergencystretch}{2em}
+\hyphenpenalty=800
+\exhyphenpenalty=800
+\journal{Astronomy and Computing}
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{A Reproducible Control-Validation Workflow for Circular-Shift and
+Surrogate Tests of Galactic Radial Profiles}
+
+
+\author[aff1]{Vitor M. F. Figueiredo\corref{cor1}}
+\cortext[cor1]{Corresponding author.}
+\address[aff1]{Independent Researcher, Nisa, Portugal}
+
+\begin{abstract}
+\begin{sloppypar}
+Correlations between radially organized covariates and the residuals of
+galaxy rotation-curve fits are used as diagnostics of inner-region
+structure. Assessing such correlations requires controls that account for
+the strong radial organization of the underlying data, because a
+correlation can exceed a simple label-shuffle comparison while reflecting
+only a broad, smooth radial trend. We present a reproducible,
+branch-separated control-validation workflow for radial-structure
+diagnostics in SPARC-like rotation-curve data. For a partial-rank branch
+of 134 galaxies, a radius-conditioned partial-rank statistic is compared
+against stochastic shuffle/permutation empirical control distributions and
+against exact circular-shift randomization distributions that preserve
+radial ordering. The observed absolute partial-rank statistic has
+across-galaxy median $\simeq 0.509$; the shuffle control
+median-of-medians is $\simeq 0.182$, whereas the ordering-preserving exact
+circular-shift control median-of-medians is $\simeq 0.532$, comparable to
+the observed statistic. For a separate spectral-control branch of 76
+galaxies, an amplitude-based spectral-concentration statistic is evaluated
+against amplitude-preserving random-phase controls; because the statistic
+is amplitude-based, equality with these controls holds by construction and
+is reported as a caveat rather than as evidence. Fixed smooth profiles are
+included as deterministic comparators, not stochastic controls. We
+document the workflow, its deterministic-seed implementation, and an
+audited descriptive demonstration for reuse, and make no physical
+interpretation or model-validation claim.
+\end{sloppypar}
+\end{abstract}
+
+\begin{keyword}
+methods: statistical \sep methods: data analysis \sep galaxies: kinematics
+and dynamics \sep surrogate data \sep permutation testing \sep
+reproducibility
+\end{keyword}
+
+\end{frontmatter}
+
+\input{sections/introduction}
+\input{sections/data}
+\input{sections/methods}
+\input{sections/demonstration}
+% Results redundancy resolved: the descriptive results live in the
+% Demonstration section. The former empty Results stub is intentionally
+% not included (see notes/FULL_PAPER_MAJOR_REVISION_REPORT.md, Objective 3).
+\input{sections/discussion}
+\input{sections/reproducibility}
+\input{sections/conclusion}
+
+% Elsevier requirement: this declaration must appear immediately above the
+% references.
+\section*{Declaration of generative AI and AI-assisted technologies in the
+writing process}
+\begin{sloppypar}
+During the preparation of this work, the author used OpenAI ChatGPT and Codex, Anthropic Claude and claude code, Google Gemini and Grok for drafting assistance, language refinement, code-review support, and the preparation of audit checklists. After using these tools, the author reviewed and edited the content as needed and takes full responsibility for the content of the publication.
+\end{sloppypar}
+
+
+\bibliographystyle{elsarticle-harv}
+\bibliography{references}
+
+\end{document}

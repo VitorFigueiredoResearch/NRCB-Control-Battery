@@ -1,0 +1,26 @@
+
+\section{Reproducibility}
+\label{sec:reproducibility}
+
+The production workflow uses frozen base seed \texttt{20260503} and the exact
+seed namespace \texttt{ac-control-validation-m-surrogate-v1}. Randomized seeds
+are deterministic unsigned integers derived from the first eight bytes of
+SHA256 applied to the namespace, base seed, canonical galaxy name, tier name,
+and one-indexed iteration. Python's built-in hash is not used. Circular shifts
+and fixed references do not use random seeds.
+
+The release plan follows general scientific-computing and
+reproducible-computational-research guidance: record executable entry points,
+inputs, outputs, environment details, and provenance sufficient for independent
+audit \citep{Wilson2014,Sandve2013}.
+
+The recorded environment includes Python \texttt{3.12.7}, NumPy
+\texttt{1.26.4} \citep{Harris2020}, and code commit \texttt{c8a6c950bd9e}. The production entry
+point is \texttt{python src/\allowbreak run\_m\_surrogate\_extension.py
+\allowbreak --production}.
+Invalid realizations were retained and counted in emitted totals while
+excluded from valid empirical statistics. Detailed audit records are retained
+in repository notes and supplementary provenance files.
+
+
+

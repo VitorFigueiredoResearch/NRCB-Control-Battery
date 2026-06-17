@@ -1,0 +1,7 @@
+# Minimal verified runtime dependencies for the NRCB lightweight release.
+# Versions were queried directly from the tested environment.
+# Only packages actually imported by the included scripts are pinned;
+# unrelated environment packages are intentionally not frozen.
+# Python 3.12.7 (see ENVIRONMENT.md).
+numpy==1.26.4
+matplotlib==3.9.2

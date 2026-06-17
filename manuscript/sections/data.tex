@@ -1,0 +1,37 @@
+
+\section{Data and branch definition}
+\label{sec:data}
+
+SPARC provides the rotation-curve data context and comprises 175 galaxies
+\citep{Lelli2016}. The computational workflow uses two explicitly separated
+samples: an $N=134$ partial-rank branch and an $N=76$ spectral-control branch.
+The branch sizes are not interchangeable.
+
+\subsection{Branch membership}
+
+The frozen partial-rank branch required completion of the reconstruction
+contract with at least eight valid radii, finite required vectors, positive
+radial and velocity fields, a finite radial-template covariate, and a
+computable radius-conditioned statistic. The statistic-level implementation
+separately requires at least five finite joint points.
+
+The spectral-control branch is the subset with at least 16 reconstructed
+points, at least 16 finite unique positive-radius samples, finite interpolation
+to a fixed 64-point log-radius grid, and nonzero finite spectral power.
+
+The radius-conditioning coordinate is the dimensionless observed-radius
+fraction
+\begin{equation}
+r_{gi}=\frac{R_{gi}}{R_{\max,g}},
+\qquad
+R_{\max,g}=\max_i R_{gi},
+\end{equation}
+where $R_{gi}$ is taken from the observed rotation-curve radius column after
+nonfinite or nonpositive radius and velocity rows have been excluded, and
+$R_{\max,g}$ is the maximum retained observed radius for galaxy $g$. The same
+coordinate is used in the post-reconstruction validity mask and partial-rank
+residualization. Correctly constructed values lie in $0<r_{gi}\leq1$. The
+adapter also applies a permissive upper check $r_{gi}\leq1.1$; this check is a
+post-construction implementation guard and does not redefine the
+normalization or admit any additional correctly constructed observed-radius
+fraction.

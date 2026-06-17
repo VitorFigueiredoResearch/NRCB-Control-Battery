@@ -1,0 +1,10 @@
+sample_branch,control_tier,n_galaxies,total_realizations,observed_median,control_median_of_medians,control_global_p05,control_global_p95,median_empirical_percentile,notes
+partial_rank_134,circular_shift_control_partial_rank,134,2969,-0.49302309890884427,0.058312141715850904,-0.84710028894608358,0.86146113483732178,0.22792207792207791,Descriptive across-galaxy summary only; not a pooled empirical test
+partial_rank_134,circular_shift_control_partial_rank_absolute,134,2969,0.50943608330093082,0.53167821903698531,0.044406354016105924,0.91253588675671882,0.53846153846153844,Descriptive across-galaxy summary only; not a pooled empirical test
+partial_rank_134,shuffle_surrogate_partial_rank,134,134000,-0.49302309890884427,-0.0010848623788676922,-0.44915603422131112,0.44815102173190569,0.014999999999999999,Descriptive across-galaxy summary only; not a pooled empirical test
+partial_rank_134,shuffle_surrogate_partial_rank_absolute,134,134000,0.50943608330093082,0.18187787153840396,0.015702056399616224,0.54601192489956862,0.97449999999999992,Descriptive across-galaxy summary only; not a pooled empirical test
+spectral_control_76,random_phase_surrogate_radial_template,76,76000,0.75354757060533917,0.75354757060533917,0.55944160921646402,0.88883139095036623,0.5,Descriptive across-galaxy summary only; not a pooled empirical test
+spectral_control_76,random_phase_surrogate_residual,76,76000,0.67582121407481921,0.67582121407481921,0.41511613433329941,0.87854360337522497,0.5,Descriptive across-galaxy summary only; not a pooled empirical test
+spectral_control_76,smooth_profile_exponential_reference,76,76,,0.54841116895906106,0.54841116895906106,0.54841116895906106,,Descriptive across-galaxy summary only; not a pooled empirical test
+spectral_control_76,smooth_profile_linear_reference,76,76,,0.55293651198333094,0.55293651198333094,0.55293651198333094,,Descriptive across-galaxy summary only; not a pooled empirical test
+spectral_control_76,smooth_profile_quadratic_reference,76,76,,0.57036991400033354,0.57036991400033354,0.57036991400033354,,Descriptive across-galaxy summary only; not a pooled empirical test
