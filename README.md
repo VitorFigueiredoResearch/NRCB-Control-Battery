@@ -1,4 +1,10 @@
-# Nisa Radial Control Battery Paper-Reproduction Release
+# Nisa Radial Control Battery (NRCB)
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20726320.svg)](https://doi.org/10.5281/zenodo.20726320)
+[![GitHub release](https://img.shields.io/github/v/release/VitorFigueiredoResearch/NRCB-Control-Battery)](https://github.com/VitorFigueiredoResearch/NRCB-Control-Battery/releases)
+[![Code License: GPL-3.0-only](https://img.shields.io/badge/code%20license-GPL--3.0--only-blue.svg)](LICENSE.md)
+[![Docs License: CC BY 4.0](https://img.shields.io/badge/docs%20license-CC%20BY%204.0-lightgrey.svg)](LICENSE.md)
+[![ORCID](https://img.shields.io/badge/ORCID-0009--0004--7358--4622-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0009-0004-7358-4622)
 
 This release package supports paper reproduction for the Astronomy & Computing computational-methods manuscript:
 
