@@ -1,19 +1,25 @@
 cff-version: 1.2.0
 message: >-
-  If you use this software or its method, please cite both the manuscript
-  (for the method) and the archived software release (for the
-  implementation). DOI metadata will be added after archival deposit.
+  If you use this software, please cite the archived software release:
+  Figueiredo, V. M. F. (2026). Nisa Radial Control Battery (v1.0.1). Zenodo. https://doi.org/10.5281/zenodo.20726321
 title: Nisa Radial Control Battery
 type: software
+version: 1.0.1
+doi: 10.5281/zenodo.20726321
+repository-code: https://github.com/VitorFigueiredoResearch/NRCB-Control-Battery
+url: https://github.com/VitorFigueiredoResearch/NRCB-Control-Battery
 authors:
   - family-names: Figueiredo
     given-names: Vitor M. F.
+    orcid: https://orcid.org/0009-0004-7358-4622
 license: GPL-3.0-only
 preferred-citation:
-  type: article
-  title: >-
-    A Reproducible Control-Validation Workflow for Circular-Shift and
-    Surrogate Tests of Galactic Radial Profiles
+  type: software
+  title: Nisa Radial Control Battery
   authors:
     - family-names: Figueiredo
       given-names: Vitor M. F.
+      orcid: https://orcid.org/0009-0004-7358-4622
+  version: 1.0.1
+  doi: 10.5281/zenodo.20726321
+  url: https://doi.org/10.5281/zenodo.20726321

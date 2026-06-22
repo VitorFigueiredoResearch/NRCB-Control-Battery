@@ -15,6 +15,20 @@ Lelli, F., McGaugh, S. S., & Schombert, J. M. (2016),
 The Astronomical Journal, 152, 157.
 https://doi.org/10.3847/0004-6256/152/6/157
 
+## Repository and archived release
+
+Public repository:
+https://github.com/VitorFigueiredoResearch/NRCB-Control-Battery
+
+Version-specific archived release DOI:
+https://doi.org/10.5281/zenodo.20726321
+
+Concept DOI for all versions:
+https://doi.org/10.5281/zenodo.20726320
+
+Citation metadata:
+https://github.com/VitorFigueiredoResearch/NRCB-Control-Battery/blob/main/CITATION.cff
+
 ## What is included for reproduction
 
 - **Paper and figure reproduction** use the compact derived summary files

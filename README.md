@@ -1,10 +1,14 @@
-# Nisa Radial Control Battery Paper-Reproduction Release Candidate
+# Nisa Radial Control Battery Paper-Reproduction Release
 
-This release candidate supports paper reproduction for the Astronomy & Computing computational-methods manuscript:
+This release package supports paper reproduction for the Astronomy & Computing computational-methods manuscript:
 
 **A Reproducible Control-Validation Workflow for Circular-Shift and Surrogate Tests of Galactic Radial Profiles**
 
 The implemented workflow is referred to here as the Nisa Radial Control Battery (NRCB). The NRCB is a branch-separated suite of shuffle, exact circular-shift, surrogate, and fixed-reference controls for radial-profile diagnostics.
+
+## Name
+
+The name Nisa Radial Control Battery reflects the author's research base in Nisa, Portugal, and the workflow's role as a controlled battery of radial-profile validation tests.
 
 ## Release Modes
 
@@ -25,7 +29,7 @@ This package documents a computational workflow and compact paper-reproduction a
 - `results/`: compact QC-accepted result files.
 - `provenance/`: selected reproducibility records, final release status, and checksums.
 - `src/`: paper-pipeline scripts and SPARC bootstrap validator.
-- `data/`: data-policy placeholders and future example/user-data folders.
+- `data/`: data-policy documentation and future example/user-data folders.
 
 ## SPARC and Full-Rerun Dependency Boundary
 
@@ -33,14 +37,25 @@ Paper reproduction does not require raw SPARC files or `run_sparc_lite.py`. Full
 
 ## Citation
 
-Citation metadata is in `CITATION.cff`. Please cite:
+Version-specific citation for the exact archived package used:
 
-- the **manuscript** for the method (NRCB workflow and its definitions);
-- the **archived software release** for the implementation.
+Figueiredo, V. M. F. (2026). Nisa Radial Control Battery (v1.0.1). Zenodo. https://doi.org/10.5281/zenodo.20726321
 
-Final DOI metadata (repository URL and Zenodo DOI) will be added to
-`CITATION.cff` after archival deposit; they are intentionally omitted until
-real values exist.
+Concept DOI for all versions:
+
+https://doi.org/10.5281/zenodo.20726320
+
+Repository:
+
+https://github.com/VitorFigueiredoResearch/NRCB-Control-Battery
+
+Citation metadata:
+
+https://github.com/VitorFigueiredoResearch/NRCB-Control-Battery/blob/main/CITATION.cff
+
+Cite the version DOI for the exact archived package used. Cite the concept DOI when referring to the project across all versions.
+
+Author ORCID: https://orcid.org/0009-0004-7358-4622
 
 ## License
 

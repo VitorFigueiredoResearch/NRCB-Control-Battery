@@ -54,10 +54,10 @@
 - Invalid rows and branch ineligibility.
 - Large artifact handling.
 
-## DATA_AVAILABILITY_TEMPLATE.md
+## DATA_AVAILABILITY.md
 
-- Human-finalized data source and licensing statement.
-- External download links or DOI placeholders.
+- Public repository, Zenodo version DOI, concept DOI, and citation metadata.
+- Official external SPARC source pointer and citation requirement.
 - Optional large artifact retrieval instructions.
 - Statement that raw/external data redistribution depends on license review.
 
