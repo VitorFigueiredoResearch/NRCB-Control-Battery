@@ -20,8 +20,8 @@ https://doi.org/10.3847/0004-6256/152/6/157
 Public repository:
 https://github.com/VitorFigueiredoResearch/NRCB-Control-Battery
 
-Version-specific archived release DOI:
-https://doi.org/10.5281/zenodo.20726321
+Version-specific archived release DOI for exact reproducibility (v1.1.0):
+https://doi.org/10.5281/zenodo.20801904
 
 Concept DOI for all versions:
 https://doi.org/10.5281/zenodo.20726320

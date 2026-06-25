@@ -1,10 +1,11 @@
-# Nisa Radial Control Battery (NRCB)
+# Nisa Radial Control Battery Paper-Reproduction Release
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20726320.svg)](https://doi.org/10.5281/zenodo.20726320)
 [![GitHub release](https://img.shields.io/github/v/release/VitorFigueiredoResearch/NRCB-Control-Battery)](https://github.com/VitorFigueiredoResearch/NRCB-Control-Battery/releases)
 [![Code License: GPL-3.0-only](https://img.shields.io/badge/code%20license-GPL--3.0--only-blue.svg)](LICENSE.md)
 [![Docs License: CC BY 4.0](https://img.shields.io/badge/docs%20license-CC%20BY%204.0-lightgrey.svg)](LICENSE.md)
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0004--7358--4622-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0009-0004-7358-4622)
+
 
 This release package supports paper reproduction for the Astronomy & Computing computational-methods manuscript:
 
@@ -20,7 +21,7 @@ The name Nisa Radial Control Battery reflects the author's research base in Nisa
 
 1. Paper Reproduction Mode: ready. Compile the manuscript, inspect final figure files, and verify compact results and provenance ledgers without rerunning production.
 2. Example / Smoke-Test Mode: planned. A small example dataset and wrapper script are future implementation items.
-3. User-Supplied Data Mode: planned. Generic user-data wrappers are not implemented in v1.0, and arbitrary data support is not claimed.
+3. User-Supplied Data Mode: planned. Generic user-data wrappers are not implemented in this release, and arbitrary data support is not claimed.
 4. Full Production Rerun Mode: preflight support is provided by `src/validate_sparc_bootstrap.py`; raw SPARC files and full source dependencies are not bundled.
 
 ## Scope
@@ -45,7 +46,7 @@ Paper reproduction does not require raw SPARC files or `run_sparc_lite.py`. Full
 
 Version-specific citation for the exact archived package used:
 
-Figueiredo, V. M. F. (2026). Nisa Radial Control Battery (v1.0.1). Zenodo. https://doi.org/10.5281/zenodo.20726321
+Figueiredo, V. M. F. (2026). Nisa Radial Control Battery (v1.1.0). Zenodo. https://doi.org/10.5281/zenodo.20801904
 
 Concept DOI for all versions:
 

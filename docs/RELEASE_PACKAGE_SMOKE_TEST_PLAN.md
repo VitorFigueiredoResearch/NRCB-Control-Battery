@@ -4,7 +4,7 @@ This is a design plan only. The smoke test is not run in this task.
 
 ## Goals
 
-- Verify the clean release candidate is self-consistent.
+- Verify the clean release package is self-consistent.
 - Confirm manuscript compilation and citation resolution.
 - Confirm compact result files and figure files exist.
 - Confirm no private paths or excluded files entered the release.

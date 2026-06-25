@@ -2,7 +2,7 @@
 
 ## Current Release Status
 
-This release candidate is the current compact paper-reproduction package for the Nisa Radial Control Battery (NRCB) manuscript.
+This release package is the current compact paper-reproduction package for the Nisa Radial Control Battery (NRCB) manuscript.
 
 ## Included Release-Facing Artifacts
 
@@ -16,7 +16,7 @@ These compact summaries are the artifacts used for paper reproduction, figure/va
 
 ## Large Realization Table
 
-The full production realization table `per_realization_controls.csv` is not included in this lightweight release candidate. It is an optional large artifact for deep streaming QC or derived-summary regeneration.
+The full production realization table `per_realization_controls.csv` is not included in this lightweight release package. It is an optional large artifact for deep streaming QC or derived-summary regeneration.
 
 ## Historical Manifest Interpretation
 
